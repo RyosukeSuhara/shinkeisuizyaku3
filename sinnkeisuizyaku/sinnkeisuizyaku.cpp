@@ -32,6 +32,8 @@ int main()
     };
     
 
+
+
     int mark = 0;
     int num = 0;
     int line1 = 0;
@@ -121,6 +123,7 @@ int main()
         }
 
         if (clearnum == 26) {
+            cout << "すべてそろった！" << endl;
             break;
         }
 
