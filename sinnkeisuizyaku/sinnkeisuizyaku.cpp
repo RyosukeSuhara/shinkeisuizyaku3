@@ -40,6 +40,7 @@ int main()
     int row2 = 0;
     int firstpick = 0;
     int secondpick = 0;
+    int clearnum = 0;
 
     for (int i = 0; i < 4; ++i) {
         for (int j = 0; j < 13;) {
@@ -111,10 +112,16 @@ int main()
 
             pickCheck[line1-1][row1-1] = 1;
             pickCheck[line2-1][row2-1] = 1;
+
+            clearnum++;
         }
         else
         {
             cout << "一致しませんでした" << endl;
+        }
+
+        if (clearnum == 26) {
+            break;
         }
 
     }
